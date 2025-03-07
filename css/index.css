@@ -1,0 +1,365 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: black;
+}
+.button {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.button:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center; /* по вертикали */
+  /* border: 1px solid rgb(255, 0, 0); */
+  height: 50px;
+  background: url();
+}
+.title3 {
+  padding-left: 200px;
+}
+.title2 img {
+  width: 300px; /* задайте нужную ширину */
+  height: auto; /* сохраняет пропорции */
+}
+.link1 {
+  padding-left: 200px;
+}
+hr {
+  width: 40%;
+  border: none;
+  border-top: 1px solid #323232;
+  margin: 0 auto;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+.ply {
+  border-radius: 100px;
+  width: 320px;
+}
+.menu a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.menu a:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.parallax {
+  background: url(/poly/она.png);
+  overflow: hidden; /* добавлено для обрезания фона по округлым углам */
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: justify;
+}
+.parallax2 {
+  background: url(/poly/по33.png);
+  background-attachment: fixed;
+  background-size: 99% 190%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: justify;
+}
+
+.parallax .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.parallax2 .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.parallax-content {
+  margin: auto;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+td {
+  padding-left: 50px;
+}
+h1 {
+  text-align: center;
+  z-index: 3;
+}
+
+.page-content {
+  height: 500px;
+}
+
+.page-content table {
+  margin: auto;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-content p {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meme {
+  display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center; /* по вертикали */
+  /* border: 1px solid rgb(255, 0, 0); */
+  height: 80px;
+}
+
+.meme ul {
+  list-style-type: none;
+
+  display: flex;
+}
+
+.meme li {
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+.meme a {
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+  font-weight: bold;
+}
+
+.meme a:hover {
+  color: hsl(316, 100%, 50%);
+}
+
+.page-content2 {
+  height: 600px;
+}
+
+.page-content2 table {
+  margin: auto;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-content2 p {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gain-center {
+  transition: 1s;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.gain-center:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+/* Основной контейнер */
+.hero-section {
+  display: flex;
+  height: 170vh; /* или другая желаемая высота */
+  /* Если хотите, можно задать минимальную высоту */
+  /* min-height: 600px; */
+}
+
+/* Левая часть */
+.hero-left {
+  flex: 0 0 40%; /* Примерно 40% от ширины экрана */
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* выравниваем по вертикали */
+  padding: 40px; /* внутренние отступы */
+}
+
+.hero-number {
+  font-size: 5rem; /* Большой размер цифры */
+  font-weight: bold;
+  margin-bottom: 20px;
+  top: -20px;
+}
+
+.hero-title {
+  font-size: 1.8rem;
+  font-weight: 600px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.hero-description {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #000000;
+  color: #000;
+}
+.hero-right {
+  position: relative;
+  top: -38px; /* Поднимает контейнер на 20px вверх. Измените значение по необходимости */
+}
+
+.hero-middle {
+  flex: 0 0 10%; /* Примерно 10% от ширины экрана */
+  background: linear-gradient(
+    to bottom,
+    blue 0%,
+    blue 33.33%,
+    white 33.33%,
+    white 66.66%,
+    red 66.66%,
+    red 100%
+  );
+  position: relative;
+  top: -38px; /* Поднимает контейнер на 20px вверх. Измените значение по необходимости */
+}
+
+/* Правая часть с изображением */
+.hero-right {
+  flex: 0 0 50%; /* Примерно 50% от ширины экрана */
+  overflow: hidden; /* на случай, если изображение больше контейнера */
+  position: relative; /* если захотите дополнительные элементы внутри */
+}
+
+/* Стили для изображения */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* заполнить контейнер, сохраняя пропорции */
+  filter: grayscale(100%); /* чёрно-белый эффект, если нужно */
+}
+.parallax2_1 {
+  background: url(/poly/ой.png);
+  background-attachment: fixed;
+  background-size: 99% 190%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: justify;
+}
+.parallax2_1 .mask1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.parallax-content1 {
+  margin: auto;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.parallax-text1 {
+  display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center; /* по вертикали */
+  height: 100%; /* или укажите фиксированную высоту */
+  text-align: center;
+}
+.gradient-hover {
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: bold;
+  color: transparent; /* делаем текст прозрачным, чтобы показывался фон */
+  background-image: linear-gradient(48deg, #0d00ff, #919191, #ff0000);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: background-position 0.5s ease;
+}
+
+.gradient-hover:hover {
+  background-position: 100%;
+}
+@media (max-width: 765px) {
+  .Ipad {
+    width: 300px;
+    /* border: 1px solid red; */
+    height: 100x;
+    font-size: 20px;
+  }
+}
