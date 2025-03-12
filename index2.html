@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Разворачивание картинки</title>
+    <link rel="stylesheet" href="index2.css" />
+  </head>
+  <body>
+    <!-- Миниатюра, при клике на которую откроется увеличенная картинка -->
+    <img
+      src="/2page/photo/Глазкиt.png"
+      alt="Изображение"
+      class="thumbnail"
+      onclick="openModal(this)"
+    />
+
+    <!-- Модальное окно для увеличенной картинки -->
+    <div id="modal" class="modal" onclick="closeModal()">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modal-img" />
+    </div>
+
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img
+            src="//msiter.ru/img_paris.jpg"
+            alt="Paris"
+            style="width: 300px; height: 200px"
+          />
+        </div>
+        <div class="flip-box-back">
+          <h2>Париж</h2>
+          <p>Какой красивый город!</p>
+        </div>
+        <div class="hi">
+          <p>
+            The Caterpillar and Alice looked at each other for some time in
+            silence: at last the Caterpillar took the hookah out of its mouth,
+            and addressed her in a languid, sleepy voice.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="index2.js"></script>
+  </body>
+</html>
