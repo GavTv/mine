@@ -10,6 +10,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #fff;
   color: #333;
+  height: 100%;
 }
 
 /* Шапка сайта и меню */
@@ -57,7 +58,7 @@ body {
   font-size: 2.5rem;
   margin-bottom: 20px;
   opacity: 0; /* по умолчанию невидим */
-  animation: fadeIn 2s forwards; /* анимация появления */
+  animation: fadeIn 8s forwards; /* анимация появления */
 }
 
 .hero p {
@@ -113,4 +114,104 @@ body {
   font-size: 0.95rem;
   line-height: 1.5;
   color: #777;
+}
+.navi {
+  text-align: center;
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Стиль самой кнопки */
+.button {
+  min-width: 100px;
+  min-height: 100px;
+  display: inline-flex;
+  font-family: "Nunito", sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.9px;
+  font-weight: 700;
+  color: #313133;
+  background: linear-gradient(
+    90deg,
+    rgba(129, 151, 230, 0.5) 0%,
+    rgb(79, 209, 192) 100%
+  );
+  border: none;
+  /* Если хотите, чтобы кнопка была строго квадратной, можно задать border-radius: 0;
+     Если же хотите немного скруглить углы, оставьте небольшое значение */
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+/* Псевдоэлемент для подсветки - квадратный */
+.button::before {
+  border-radius: 10px;
+  content: "";
+  width: 120px; /* чуть больше, чем кнопка */
+  height: 120px;
+  border: 6px solid #00ffcb;
+  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+  transform: translateY(-6px);
+}
+
+.button:hover::before,
+.button:focus::before {
+  opacity: 1;
+}
+
+/* Псевдоэлемент для дополнительного эффекта (анимированное "кольцо") — делаем его квадратным */
+.button::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 10px; /* квадрат */
+  border: 6px solid #00ffcb;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+/* .button:hover::after,
+.button:focus::after {
+  animation: none;
+  display: none;
+} */
+
+@keyframes ring {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
 }
