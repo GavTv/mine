@@ -257,7 +257,7 @@ h1 {
 }
 
 .hero-description {
-  font-size: 13px;
+  font-size: 25px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
@@ -348,6 +348,14 @@ h1 {
   align-items: center; /* по вертикали */
   height: 100%; /* или укажите фиксированную высоту */
   text-align: center;
+  font-size: 25px;
+}
+
+.gain-center {
+  font-size: 37px;
+}
+.parallax-text {
+  font-size: 25px;
 }
 .gradient-hover {
   font-size: 2em;
@@ -359,6 +367,9 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   transition: background-position 0.5s ease;
+}
+.Ipad {
+  font-size: 20px;
 }
 
 .gradient-hover:hover {

@@ -60,22 +60,21 @@ body {
 
 .fish-list {
   padding: 0;
-  margin: 0;
-  width: 100%;
+  margin: 0 auto;
   list-style-type: none;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center; /* Центрируем карточки */
+  gap: 70px; /* Расстояние между карточками */
 }
 
 .fish-list-card {
-  width: 31.33%;
-  margin: 1%;
-  border-radius: 0.7em;
+  flex: 0 0 35%; /* Карточка занимает 40% ширины */
+  max-width: 40%;
   margin-bottom: 3em;
-  overflow: hidden;
   min-height: 450px;
   border-radius: 70px;
+  overflow: hidden;
 }
 
 .fish-list-card-name {
@@ -105,7 +104,6 @@ body {
 .main-heading {
   color: aquamarine;
 }
-
 .header-address {
   color: aquamarine;
 }
@@ -164,20 +162,14 @@ body {
 }
 
 .fish-list-card:nth-child(1) .btn-flip::after {
-  content: "Не то";
+  content: "back";
 }
 .fish-list-card:nth-child(2) .btn-flip::after {
-  content: "и не это";
-}
-.fish-list-card:nth-child(3) .btn-flip::after {
-  content: "Эх(";
+  content: "her";
 }
 .fish-list-card:nth-child(4) .btn-flip::after {
-  content: "Мимо";
+  content: "";
 }
 .fish-list-card:nth-child(5) .btn-flip::after {
-  content: "Тупик";
-}
-.fish-list-card:nth-child(6) .btn-flip::after {
-  content: "Enfin!";
+  content: "";
 }
