@@ -164,20 +164,20 @@ body {
 }
 
 .fish-list-card:nth-child(1) .btn-flip::after {
-  content: "chpok";
+  content: "Не то";
 }
 .fish-list-card:nth-child(2) .btn-flip::after {
-  content: "Счастье";
+  content: "и не это";
 }
 .fish-list-card:nth-child(3) .btn-flip::after {
-  content: "Любовь";
+  content: "Эх(";
 }
 .fish-list-card:nth-child(4) .btn-flip::after {
-  content: "Красота";
+  content: "Мимо";
 }
 .fish-list-card:nth-child(5) .btn-flip::after {
-  content: "Нынче";
+  content: "Тупик";
 }
 .fish-list-card:nth-child(6) .btn-flip::after {
-  content: "Страсть";
+  content: "Enfin!";
 }

@@ -1,0 +1,116 @@
+/* Сброс базовых отступов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основные стили для страницы */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Шапка сайта и меню */
+.main-header {
+  background-color: #fff;
+  border-bottom: 1px solid #eee; /* тонкая нижняя граница */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* меню по центру */
+  gap: 20px;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.navbar li a:hover {
+  color: #f25c5c; /* при наведении */
+}
+
+/* Секция с заголовками и описанием */
+.hero {
+  max-width: 800px; /* ограничиваем ширину, чтобы текст был удобочитаем */
+  margin: 50px auto; /* центрируем секцию по горизонтали и задаём отступ сверху/снизу */
+  text-align: center; /* выравниваем заголовки и текст по центру */
+  padding: 0 20px; /* небольшой внутренний отступ слева и справа */
+}
+
+.hero h2 {
+  font-size: 1rem;
+  color: #f25c5c; /* выделяем дополнительный заголовок */
+  margin-bottom: 10px;
+}
+
+.fade-in-text {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  opacity: 0; /* по умолчанию невидим */
+  animation: fadeIn 2s forwards; /* анимация появления */
+}
+
+.hero p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Анимация плавного появления */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Секция с тремя колонками */
+.features {
+  max-width: 1000px;
+  margin: 40px auto; /* центрируем секцию, отступы сверху и снизу */
+  display: flex;
+  gap: 30px; /* расстояние между колонками */
+  justify-content: center; /* выравниваем колонки по горизонтали */
+  padding: 0 20px;
+}
+
+.feature-box {
+  flex: 1;
+  text-align: center;
+  padding: 0 10px;
+  transition: transform 0.3s ease;
+}
+.feature-box:hover {
+  transform: scale(1.2);
+}
+
+.feature-box a {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: #333; /* Задаём желаемый цвет ссылки, например, темно-серый */
+}
+
+/* Для посещённых ссылок */
+.feature-box a:visited {
+  color: #333; /* Задаём тот же цвет, чтобы не было фиолетового оттенка */
+}
+
+.feature-box h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.feature-box p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #777;
+}

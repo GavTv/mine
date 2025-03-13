@@ -178,8 +178,17 @@ h1 {
   font-weight: bold;
 }
 
+.mom a {
+  text-decoration: none;
+  color: rgb(110, 30, 105);
+  font-weight: bold;
+}
+
 .meme a:hover {
   color: hsl(316, 100%, 50%);
+}
+.mom a:hover {
+  color: hsl(193, 54%, 5%);
 }
 
 .page-content2 {
