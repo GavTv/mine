@@ -180,12 +180,12 @@ h1 {
 
 .mom a {
   text-decoration: none;
-  color: rgb(110, 30, 105);
+  color: rgb(60, 60, 60);
   font-weight: bold;
 }
 
 .meme a:hover {
-  color: hsl(316, 100%, 50%);
+  color: hsl(0, 0%, 100%);
 }
 .mom a:hover {
   color: hsl(193, 54%, 5%);

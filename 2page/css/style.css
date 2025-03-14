@@ -162,13 +162,13 @@ body {
 }
 
 .fish-list-card:nth-child(1) .btn-flip::after {
-  content: "back";
+  content: "klikk";
 }
 .fish-list-card:nth-child(2) .btn-flip::after {
-  content: "her";
+  content: "cliquer";
 }
 .fish-list-card:nth-child(4) .btn-flip::after {
-  content: "";
+  content: "click";
 }
 .fish-list-card:nth-child(5) .btn-flip::after {
   content: "Глазки";
