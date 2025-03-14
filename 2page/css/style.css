@@ -171,5 +171,5 @@ body {
   content: "";
 }
 .fish-list-card:nth-child(5) .btn-flip::after {
-  content: "";
+  content: "Глазки";
 }

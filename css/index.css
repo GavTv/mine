@@ -31,8 +31,8 @@ body {
   padding-left: 200px;
 }
 .title2 img {
-  width: 300px; /* задайте нужную ширину */
-  height: auto; /* сохраняет пропорции */
+  width: 300px;
+  height: auto;
 }
 .link1 {
   padding-left: 200px;
@@ -70,7 +70,7 @@ hr {
 
 .parallax {
   background: url(/poly/она.png);
-  overflow: hidden; /* добавлено для обрезания фона по округлым углам */
+  overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;

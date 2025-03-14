@@ -1,11 +1,9 @@
-/* Сброс базовых отступов */
-* {
+/* Сброс базовых отступов * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Центрирование содержимого страницы */
 body {
   display: flex;
   align-items: center;
@@ -13,32 +11,84 @@ body {
   height: 100vh;
   background-color: #1e1e24;
   color: #fff;
-  background: 
-  /* Первый слой: полупрозрачный черный градиент */ linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.8)
-    ),
-    /* Второй слой: само изображение */ url(/Тесты/Фото/сидит.jpg) no-repeat
-      center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url(/Тесты/Фото/сидит.jpg) no-repeat center/cover;
   opacity: 0.8;
 
   font-family: "Pecita", sans-serif;
   font-size: 20px;
 }
 
-/* Стиль для движущейся надписи */
 .moving-text {
   font-size: 3em;
   text-align: center;
   animation: float 3s infinite alternate ease-in-out;
 }
 
-/* Ключевые кадры анимации */
 @keyframes float {
   0% {
     transform: translateY(0);
   }
   100% {
+    transform: translateY(-30px);
+  }
+} */
+
+Сброс базовых отступов * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1e1e24;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url(/Тесты/Фото/сидит.jpg) no-repeat center/cover;
+  opacity: 0.8;
+
+  font-family: "Marck Script", sans-serif;
+  font-size: 20px;
+}
+
+.moving-text {
+  font-size: 3em;
+  text-align: center;
+  animation: float 3s infinite alternate ease-in-out;
+}
+
+.neon {
+  color: #4842fb;
+  font-size: 9vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #392abf;
+  font-size: 3em;
+  text-align: center;
+  animation: float 3s infinite alternate ease-in-out;
+}
+
+.neon {
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 7s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    transform: translateY(0);
+    text-shadow: 0 0 1vw #166dfa, 0 0 3vw #0a1ed6, 0 0 10vw #16bab4,
+      0 0 10vw #100d52, 0 0 0.4vw #6828fe, 0.5vw 0.5vw 0.1vw #141880;
+    color: #6828fe;
+  }
+  60% {
+    text-shadow: 0 0 0.5vw #0d0b80, 0 0 1.5vw #1c2576, 0 0 5vw #280f95,
+      0 0 5vw #2d1181, 0 0 0.2vw #0b1f80, 0.5vw 0.5vw 0.1vw #1c190d;
+    color: #261480;
     transform: translateY(-30px);
   }
 }
