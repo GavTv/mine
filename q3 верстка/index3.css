@@ -8,9 +8,32 @@
 /* Основные стили для страницы */
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #333;
-  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url(/2page/photo/Обед.png);
+  background-size: cover;
+  background-blend-mode: multiply;
+  min-height: 10vh; /* страница будет иметь минимальную высоту в 200% от высоты окна */
+}
+
+/* Стили для видеофона */
+#bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; /* видео будет позади всего контента */
+  background-size: cover;
+}
+
+/* Стили для основного содержимого */
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 50px;
 }
 
 /* Шапка сайта и меню */
@@ -59,6 +82,7 @@ body {
   margin-bottom: 20px;
   opacity: 0; /* по умолчанию невидим */
   animation: fadeIn 8s forwards; /* анимация появления */
+  color: #7e7d7d;
 }
 
 .hero p {
@@ -117,6 +141,7 @@ body {
 }
 .navi {
   text-align: center;
+  color: #00ffcb;
 }
 
 .wrap {
@@ -195,6 +220,34 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   animation: ring 1.5s infinite;
+}
+
+footer hr {
+  width: 40%; /* длина линии - 40% от ширины контейнера */
+  border: none;
+  border-top: 2px solid #ff0000; /* толщина и цвет линии */
+  margin: 20px auto; /* центрирование и отступы сверху/снизу */
+}
+
+.meme {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  /* background: rgba(2, 2, 2, 0.5); опционально: фон, чтобы текст читался */
+  padding: 10px 0;
+  z-index: 100; /* чтобы элемент был поверх остальных */
+  color: #333;
+}
+.meme::before {
+  content: "";
+  display: block;
+  width: 50%; /* Длина линии – 50% от ширины контейнера, можно менять */
+  margin: 0 auto 10px; /* Центрирование линии и отступ снизу */
+  color: #333;
+  border-top: 2px solid #333; /* Толщина и цвет линии, можно настроить */
 }
 
 /* .button:hover::after,
