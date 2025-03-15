@@ -8,8 +8,7 @@
 /* Основные стили для страницы */
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    url(/2page/photo/Обед.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(#);
   background-size: cover;
   background-blend-mode: multiply;
   min-height: 10vh; /* страница будет иметь минимальную высоту в 200% от высоты окна */
