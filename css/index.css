@@ -6,7 +6,46 @@ body {
   padding: 0px;
   box-sizing: border-box;
   background-color: black;
+  height: 100%;
 }
+
+/* Модальное окно занимает всю страницу */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* затемнённый фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Большая кнопка в модальном окне */
+.modal-button {
+  font-size: 2em;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-button:hover {
+  background-color: #ddd;
+}
+
+/* Основной контент сайта, скрытый по умолчанию */
+.main-content {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
 .button {
   text-decoration: none;
   color: rgb(255, 255, 255);
