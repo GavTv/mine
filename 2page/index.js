@@ -14,7 +14,7 @@ document.addEventListener("copy", (event) => {
   let text = document.getSelection().toString();
   event.clipboardData.setData(
     "text/plain",
-    "Дурак что ли? сказали же не копировать......."
+    " Ну сказали же, не копировать......."
   );
   event.preventDefault();
 });
