@@ -72,18 +72,18 @@ body {
 }
 
 .flux {
-  color: #920692;
+  color: #4842fb;
   font-size: 9vw;
   line-height: 9vw;
-  text-shadow: 0 0 3vw #e7147a;
+  text-shadow: 0 0 3vw #392abf;
   font-size: 3em;
   text-align: center;
   animation: float 3s infinite alternate ease-in-out;
 }
 
 .flux {
-  animation: flux 10s ease infinite;
-  -moz-animation: flux 10s ease infinite;
+  animation: flux 1s ease infinite;
+  -moz-animation: flux 1s ease infinite;
   -webkit-animation: flux 7s ease infinite;
 }
 
@@ -112,15 +112,15 @@ body {
 @keyframes flux {
   0%,
   90% {
-    transform: translateY(10);
-    text-shadow: 0 0 1vw #c70a6c, 0 0 3vw #e718c1, 0 0 10vw #c113a7,
-      0 0 10vw #c9078c, 0 0 0.4vw #ae0c8e, 0.5vw 0.5vw 0.1vw #c809bb;
-    color: #b80e77;
+    transform: translateY(0);
+    text-shadow: 0 0 1vw #fa16a3, 0 0 3vw #d60ab1, 0 0 10vw #b20c94,
+      0 0 10vw #100d52, 0 0 0.4vw #db1ebf, 0.5vw 0.5vw 0.1vw #141880;
+    color: #fe28ba;
   }
   50% {
-    text-shadow: 0 0 0.5vw #29091c, 0 0 1.5vw #e30ebc, 0 0 5vw #db0ca3,
-      0 0 5vw #7b00ff, 0 0 0.2vw #d816b1, 0.5vw 0.5vw 0.1vw #ca168b;
-    color: #a7158f;
-    transform: translateY(-35px);
-  }
+    text-shadow: 0 0 0.5vw #0d0b80, 0 0 1.5vw #1c2576, 0 0 5vw #280f95,
+      0 0 5vw #2d1181, 0 0 0.2vw #0b1f80, 0.5vw 0.5vw 0.1vw #1c190d;
+    color: #261480;
+    transform: translateY(-30px);
+}
 }
