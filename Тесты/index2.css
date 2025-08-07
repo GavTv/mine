@@ -108,19 +108,3 @@ body {
     transform: translateY(-30px);
   }
 }
-
-@keyframes flux {
-  0%,
-  90% {
-    transform: translateY(0);
-    text-shadow: 0 0 1vw #fa16a3, 0 0 3vw #d60ab1, 0 0 10vw #b20c94,
-      0 0 10vw #100d52, 0 0 0.4vw #db1ebf, 0.5vw 0.5vw 0.1vw #141880;
-    color: #fe28ba;
-  }
-  50% {
-    text-shadow: 0 0 0.5vw #0d0b80, 0 0 1.5vw #1c2576, 0 0 5vw #280f95,
-      0 0 5vw #2d1181, 0 0 0.2vw #0b1f80, 0.5vw 0.5vw 0.1vw #1c190d;
-    color: #261480;
-    transform: translateY(-30px);
-  }
-}
