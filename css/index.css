@@ -399,7 +399,7 @@ h1 {
 
 @media screen and (max-width: 1023px) {
   body::before {
-    content: "Можешь не смотреть, не для тебя делали долбаеб";
+    content: "Ты долбаеб? Сказали же только с компа, нахуй ты открываешь на телефоне";
     position: fixed;
     top: 0;
     left: 0;
