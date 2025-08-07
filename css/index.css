@@ -9,21 +9,21 @@ body {
   height: 100%;
 }
 
-/* Модальное окно занимает всю страницу */
+/* РњРѕРґР°Р»СЊРЅРѕРµ РѕРєРЅРѕ Р·Р°РЅРёРјР°РµС‚ РІСЃСЋ СЃС‚СЂР°РЅРёС†Сѓ */
 .modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8); /* затемнённый фон */
+  background: rgba(0, 0, 0, 0.8); /* Р·Р°С‚РµРјРЅС‘РЅРЅС‹Р№ С„РѕРЅ */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
 
-/* Большая кнопка в модальном окне */
+/* Р‘РѕР»СЊС€Р°СЏ РєРЅРѕРїРєР° РІ РјРѕРґР°Р»СЊРЅРѕРј РѕРєРЅРµ */
 .modal-button {
   font-size: 2em;
   padding: 20px 40px;
@@ -39,12 +39,7 @@ body {
   background-color: #ddd;
 }
 
-/* Основной контент сайта, скрытый по умолчанию */
-.main-content {
-  display: none;
-  padding: 20px;
-  text-align: center;
-}
+/* РћСЃРЅРѕРІРЅРѕР№ РєРѕРЅС‚РµРЅС‚ СЃР°Р№С‚Р°, СЃРєСЂС‹С‚С‹Р№ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ */
 
 .button {
   text-decoration: none;
@@ -60,8 +55,8 @@ body {
 .title {
   padding: 10px;
   display: flex;
-  justify-content: center; /* по горизонтали */
-  align-items: center; /* по вертикали */
+  justify-content: center; /* РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё */
+  align-items: center; /* РїРѕ РІРµСЂС‚РёРєР°Р»Рё */
   /* border: 1px solid rgb(255, 0, 0); */
   height: 50px;
   background: url();
@@ -69,10 +64,7 @@ body {
 .title3 {
   padding-left: 200px;
 }
-.title2 img {
-  width: 300px;
-  height: auto;
-}
+
 .link1 {
   padding-left: 200px;
 }
@@ -91,10 +83,7 @@ hr {
 .menu li {
   margin-right: 20px;
 }
-.ply {
-  border-radius: 100px;
-  width: 320px;
-}
+
 .menu a {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -108,7 +97,7 @@ hr {
 }
 
 .parallax {
-  background: url(/poly/она.png);
+  background: url(/poly/111.png);
   overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
@@ -121,7 +110,7 @@ hr {
   text-align: justify;
 }
 .parallax2 {
-  background: url(/poly/по33.png);
+  background: url(/poly/122.png);
   background-attachment: fixed;
   background-size: 99% 190%;
   background-repeat: no-repeat;
@@ -151,6 +140,9 @@ hr {
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
   z-index: 2;
+}
+.why {
+  text-align: center;
 }
 
 .parallax-content {
@@ -194,8 +186,8 @@ h1 {
 
 .meme {
   display: flex;
-  justify-content: center; /* по горизонтали */
-  align-items: center; /* по вертикали */
+  justify-content: center; /* РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё */
+  align-items: center; /* РїРѕ РІРµСЂС‚РёРєР°Р»Рё */
   /* border: 1px solid rgb(255, 0, 0); */
   height: 80px;
 }
@@ -255,36 +247,28 @@ h1 {
   transition: 1s;
   text-align: center;
   white-space: nowrap;
+  margin-left: 25px;
 }
 
 .gain-center:hover {
-  transform: scale(1.2); /* Увеличиваем масштаб */
+  transform: scale(1.2);
 }
 
-/* Основной контейнер */
+/* РћСЃРЅРѕРІРЅРѕР№ РєРѕРЅС‚РµР№РЅРµСЂ */
 .hero-section {
   display: flex;
-  height: 170vh; /* или другая желаемая высота */
-  /* Если хотите, можно задать минимальную высоту */
-  /* min-height: 600px; */
+  height: 170vh;
 }
 
-/* Левая часть */
+/* Р›РµРІР°СЏ С‡Р°СЃС‚СЊ */
 .hero-left {
-  flex: 0 0 40%; /* Примерно 40% от ширины экрана */
+  flex: 0 0 40%; /* РџСЂРёРјРµСЂРЅРѕ 40% РѕС‚ С€РёСЂРёРЅС‹ СЌРєСЂР°РЅР° */
   background-color: #000;
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* выравниваем по вертикали */
-  padding: 40px; /* внутренние отступы */
-}
-
-.hero-number {
-  font-size: 5rem; /* Большой размер цифры */
-  font-weight: bold;
-  margin-bottom: 20px;
-  top: -20px;
+  justify-content: center; /* РІС‹СЂР°РІРЅРёРІР°РµРј РїРѕ РІРµСЂС‚РёРєР°Р»Рё */
+  padding: 40px; /* РІРЅСѓС‚СЂРµРЅРЅРёРµ РѕС‚СЃС‚СѓРїС‹ */
 }
 
 .hero-title {
@@ -318,11 +302,11 @@ h1 {
 }
 .hero-right {
   position: relative;
-  top: -38px; /* Поднимает контейнер на 20px вверх. Измените значение по необходимости */
+  top: -38px; /* РџРѕРґРЅРёРјР°РµС‚ РєРѕРЅС‚РµР№РЅРµСЂ РЅР° 20px РІРІРµСЂС…. РР·РјРµРЅРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ РїРѕ РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё */
 }
 
 .hero-middle {
-  flex: 0 0 10%; /* Примерно 10% от ширины экрана */
+  flex: 0 0 10%; /* РџСЂРёРјРµСЂРЅРѕ 10% РѕС‚ С€РёСЂРёРЅС‹ СЌРєСЂР°РЅР° */
   background: linear-gradient(
     to bottom,
     blue 0%,
@@ -333,25 +317,27 @@ h1 {
     red 100%
   );
   position: relative;
-  top: -38px; /* Поднимает контейнер на 20px вверх. Измените значение по необходимости */
+  top: -38px; /* РџРѕРґРЅРёРјР°РµС‚ РєРѕРЅС‚РµР№РЅРµСЂ РЅР° 20px РІРІРµСЂС…. РР·РјРµРЅРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ РїРѕ РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё */
 }
 
-/* Правая часть с изображением */
+/* РџСЂР°РІР°СЏ С‡Р°СЃС‚СЊ СЃ РёР·РѕР±СЂР°Р¶РµРЅРёРµРј */
 .hero-right {
-  flex: 0 0 50%; /* Примерно 50% от ширины экрана */
-  overflow: hidden; /* на случай, если изображение больше контейнера */
-  position: relative; /* если захотите дополнительные элементы внутри */
+  flex: 0 0 50%; /* РџСЂРёРјРµСЂРЅРѕ 50% РѕС‚ С€РёСЂРёРЅС‹ СЌРєСЂР°РЅР° */
+  overflow: hidden; /* РЅР° СЃР»СѓС‡Р°Р№, РµСЃР»Рё РёР·РѕР±СЂР°Р¶РµРЅРёРµ Р±РѕР»СЊС€Рµ РєРѕРЅС‚РµР№РЅРµСЂР° */
+  position: relative; /* РµСЃР»Рё Р·Р°С…РѕС‚РёС‚Рµ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ СЌР»РµРјРµРЅС‚С‹ РІРЅСѓС‚СЂРё */
 }
 
-/* Стили для изображения */
+/* РЎС‚РёР»Рё РґР»СЏ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ */
 .hero-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* заполнить контейнер, сохраняя пропорции */
-  filter: grayscale(100%); /* чёрно-белый эффект, если нужно */
+  object-fit: cover; /* Р·Р°РїРѕР»РЅРёС‚СЊ РєРѕРЅС‚РµР№РЅРµСЂ, СЃРѕС…СЂР°РЅСЏСЏ РїСЂРѕРїРѕСЂС†РёРё */
+  filter: grayscale(
+    100%
+  ); /* С‡С‘СЂРЅРѕ-Р±РµР»С‹Р№ СЌС„С„РµРєС‚, РµСЃР»Рё РЅСѓР¶РЅРѕ */
 }
 .parallax2_1 {
-  background: url(/poly/ой.png);
+  background: url(/poly/Милость.png);
   background-attachment: fixed;
   background-size: 99% 190%;
   background-repeat: no-repeat;
@@ -383,9 +369,9 @@ h1 {
 }
 .parallax-text1 {
   display: flex;
-  justify-content: center; /* по горизонтали */
-  align-items: center; /* по вертикали */
-  height: 100%; /* или укажите фиксированную высоту */
+  justify-content: center; /* РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё */
+  align-items: center; /* РїРѕ РІРµСЂС‚РёРєР°Р»Рё */
+  height: 100%; /* РёР»Рё СѓРєР°Р¶РёС‚Рµ С„РёРєСЃРёСЂРѕРІР°РЅРЅСѓСЋ РІС‹СЃРѕС‚Сѓ */
   text-align: center;
   font-size: 25px;
 }
@@ -400,7 +386,7 @@ h1 {
   font-size: 2em;
   text-decoration: none;
   font-weight: bold;
-  color: transparent; /* делаем текст прозрачным, чтобы показывался фон */
+  color: transparent; /* РґРµР»Р°РµРј С‚РµРєСЃС‚ РїСЂРѕР·СЂР°С‡РЅС‹Рј, С‡С‚РѕР±С‹ РїРѕРєР°Р·С‹РІР°Р»СЃСЏ С„РѕРЅ */
   background-image: linear-gradient(48deg, #0d00ff, #919191, #ff0000);
   background-size: 200%;
   background-clip: text;
@@ -414,28 +400,27 @@ h1 {
 .gradient-hover:hover {
   background-position: 100%;
 }
-@media (max-width: 765px) {
-  .Ipad {
-    width: 300px;
-    /* border: 1px solid red; */
-    height: 100x;
-    font-size: 20px;
+
+@media screen and (max-width: 1023px) {
+  body::before {
+    content: "Открой пожалуйста с компа только";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    color: black;
+    font-size: 18px;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
   }
-}
 
-p {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
+  body > * {
+    display: none !important;
   }
 }

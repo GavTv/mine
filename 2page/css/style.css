@@ -13,7 +13,7 @@ body {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.8)
     ),
-    /* Второй слой: само изображение */ url(/2page/photo/Обед.png);
+    /* Второй слой: само изображение */ url(/2page/photo/night.gif);
   background-size: cover;
   background-blend-mode: multiply;
 }
@@ -34,10 +34,6 @@ body {
   padding-bottom: 300px;
 }
 
-
-
-
-
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -49,7 +45,7 @@ body {
 }
 
 .wordmark {
-  font-size: 8em;
+  font-size: 6em;
   font-family: "Slackey", cursive;
   color: white;
   -webkit-text-stroke-width: 2px;
