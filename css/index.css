@@ -407,7 +407,8 @@ canvas {
 
 @media screen and (max-width: 1023px) {
   body::before {
-    content: "Ты долбаеб? Сказали же только с компа, нахуй ты открываешь на телефоне";
+    content: "Тут телефон не стоит использовать)  возьми комп";
+
     position: fixed;
     top: 0;
     left: 0;

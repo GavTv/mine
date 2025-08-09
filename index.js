@@ -68,7 +68,7 @@ point.prototype.update = function () {
   ctx.fill();
   ctx.closePath();
 
-  // Change direction if running into black pixel
+
   if (
     this.x + this.vx >= c.width ||
     this.x + this.vx < 0 ||
