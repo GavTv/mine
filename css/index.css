@@ -241,6 +241,14 @@ h1 {
   align-items: center;
 }
 
+html {
+}
+canvas {
+  display: block;
+  margin: auto;
+  background: #000000;
+}
+
 .gain-center {
   transition: 1s;
   text-align: center;
